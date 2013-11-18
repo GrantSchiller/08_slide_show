@@ -18,7 +18,7 @@ Shoes.app :width => 500, :height => 500, :title => "Slideshow" do
 	end
 
 
-	every 1 do
+	every 0.5 do
 		debug "Trying to progress to the next image in the slideshow"
 		if @g.is_empty? == false and @playing
 		  @img_holder.clear { image @g.get_current_image }
